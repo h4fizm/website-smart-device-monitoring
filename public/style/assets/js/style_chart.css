@@ -1,0 +1,67 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+.container {
+    display: flex;
+    width: 100px; /* Adjust the width as needed */
+    padding: 30px 0; /* Adjust the padding as needed */
+    border-radius: 8px;
+    background: #fff;
+    row-gap: 20px; /* Adjust the row-gap as needed */
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}
+
+.circular-progress {
+    position: relative;
+    height: 150px; /* Adjust the height as needed */
+    width: 150px; /* Adjust the width as needed */
+    border-radius: 50%;
+    background: conic-gradient(rgb(13, 110, 155) 3.6deg, #ededed 0deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circular-progress::before {
+    content: "";
+    position: absolute;
+    height: 120px; /* Adjust the height as needed */
+    width: 120px; /* Adjust the width as needed */
+    border-radius: 50%;
+    background-color: #fff;
+    z-index: 1; /* Ensure it's above the progress indicator */
+}
+
+.progress-value {
+    position: relative;
+    font-size: 20px; /* Adjust the font size as needed */
+    font-weight: 600;
+    color: #3a2ae8;
+    z-index: 2; /* Ensure it's above the background */
+}
+
+.text {
+    font-size: 18px; /* Adjust the font size as needed */
+    font-weight: 500;
+    color: #606060;
+}
+
+.progress-indicator {
+    position: absolute;
+    top: -20px; /* Adjust the distance as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px; /* Adjust the font size as needed */
+    font-weight: 500;
+    color: #606060;
+    z-index: 3; /* Ensure it's above everything */
+}

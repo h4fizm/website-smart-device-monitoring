@@ -1,0 +1,80 @@
+/* style.css */
+
+/* Kompenen sebelah kiri */
+.title {
+    position: relative;
+    left: -10px; /* Sesuaikan nilai left sesuai kebutuhan */
+    bottom: -400px; /* Sesuaikan nilai bottom sesuai kebutuhan */
+    font-size: 4.5rem; /* Sesuaikan nilai font-size sesuai kebutuhan */
+    text-shadow: 2px 2px 2px #000; /* Sesuaikan offset dan warna sesuai kebutuhan */
+}
+
+/* komponen sebelah kanan */
+.smart{
+    color: #186CCF;
+}
+
+.brand {
+    color: #000000;
+}
+
+.sign-container {
+    max-width: 470px;
+}
+
+.icon-height {
+    height: 24px;
+    width: 24px;
+}
+
+.right-box {
+    background: linear-gradient(#186CCF, #186CCF);
+}
+
+.inputbox {
+    border: 1px solid #cfcece;
+    outline: none;
+}
+
+.inputbox:focus {
+    border: 2px solid #186CCF;
+}
+
+.input-label {
+    top: -12px;
+    left: 3%;
+}
+
+.sign-up {
+    background: #186CCF;
+    color: #fff;
+}
+
+.sign-up:hover {
+    background: #fff;
+    color: #186CCF;
+    border: 1px solid #186CCF;
+}
+
+.signin-border {
+    width: 60px;
+    border: 2px solid #000000;
+}
+
+
+/* Media Queries untuk Responsifitas */
+@media (max-width: 768px) {
+    /* Gaya CSS yang ingin diubah ketika lebar layar kurang dari atau sama dengan 768px */
+    .title {
+        display: none;
+    }
+
+    .background-style{
+        display: none;
+    }
+
+    .sign-container {
+        max-width: 100%; /* Mengisi lebar layar penuh pada layar kecil */
+    }
+
+}
